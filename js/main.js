@@ -2,7 +2,7 @@
  * Listen to scroll to change header opacity class
  */
 function checkScroll(){
-    var startY = $('.navbar').height() * 15; //The point where the navbar changes in px
+    var startY = $('#landing').height(); //The point where the navbar changes in px
 
     if($(window).scrollTop() > startY){
         $('.navbar').addClass("scrolled");

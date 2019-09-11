@@ -6,7 +6,7 @@ html, body {
     height: 100%;
     width: 100%;
     margin: 0;
-    padding: 0;
+	padding: 0;
  }
 
 .navbar
@@ -159,6 +159,14 @@ html, body {
 #resume .timeline-block {
 	position: relative;
 	padding-top: 1.5rem;
+	transition: transform 0.2s;
+}
+
+#resume .timeline-block:hover {
+	position: relative;
+	padding-top: 1.5rem;
+	transform: scale(1.1);
+	
 }
 
 #resume .timeline-ico {
@@ -214,6 +222,117 @@ html, body {
 	color: #888888;
 }
 
+@media only screen and (max-width:1024px) {
+	#resume .timeline-header {
+		padding-right: 50px;
+	}
+	#resume .timeline-header h3 {
+		font-size: 1.8rem;
+	}
+	#resume .timeline-header p {
+		font-size: 1.4rem;
+	}
+	#resume .timeline-content {
+		padding-left: 50px;
+	}
+	
+}
+@media only screen and (max-width:768px) {
+	#resume .timeline-wrap::before {
+		left: 2.4rem;
+	}
+	#resume .timeline-ico {
+		left: 2.4rem;
+	}
+	#resume .timeline-header {
+		float: none;
+		width: auto;
+		padding-right: 15px;
+		text-align: left;
+	}
+	#resume .timeline-header h3 {
+		font-size: 2rem;
+	}
+	#resume .timeline-header p {
+		font-size: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+	#resume .timeline-content {
+		margin: 0;
+	}
+	#resume .timeline-content h4 {
+		padding-bottom: 0;
+		padding-top: 2.1rem;
+		margin-bottom: .6rem;
+		font-size: 1.7rem;
+	}
+	#resume .timeline-content h4::after {
+		bottom: auto;
+		top: 0;
+	}
+	#resume .timeline-header, #resume .timeline-content {
+		padding-left: 7rem;
+	}
+	#resume .timeline-ico i {
+		position: relative;
+		bottom:0;
+	}
+	.display-4 {
+		font-size: 2.5rem;
+		font-weight: 300;
+		line-height: 1.2;
+	}
+	.display-3 {
+		font-size: 3.5rem;
+		font-weight: 300;
+		line-height: 1.2;
+	}
+	
+	#about .container .btn 
+	{
+		font-size: 1rem;
+	}
+}
+@media only screen and (max-width:480px) {
+	#resume .resume-header h2 {
+		font-size: 2.2rem;
+	}
+	#resume .timeline-wrap::before {
+		left: 1.8rem;
+	}
+	#resume .timeline-ico {
+		height: 3.6rem;
+		width: 3.6rem;
+		line-height: 3.6rem;
+		left: 1.8rem;
+		margin-left: -1.8rem;
+		font-size: 1.5rem;
+	}
+	#resume .timeline-header, #resume .timeline-content {
+		padding-left: 5.5rem;
+	}
+	#resume .timeline-ico i {
+		position: relative;
+		bottom:0;
+	}
+	.display-4 {
+		font-size: 2.5rem;
+		font-weight: 300;
+		line-height: 1.2;
+	}
+	.display-3 {
+		font-size: 3.5rem;
+		font-weight: 300;
+		line-height: 1.2;
+	}
+	
+	#about .container .btn 
+	{
+		font-size: 1rem;
+	}
+}
+
+
 #services
 {
 	background: url("../img/carouselBg.jpg");
@@ -267,6 +386,13 @@ form button[type=submit]:hover
 	background-color: rgb(218, 0, 102);
 	border: 0;
 }
+
+footer .social
+{
+	padding-top: 3rem;
+	margin-bottom: 0;
+}
+
 
 textarea:hover, 
 input:hover, 
