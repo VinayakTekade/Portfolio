@@ -392,8 +392,14 @@ footer .social
 {
 	padding-top: 3rem;
 	margin-bottom: 0;
+	
 }
 
+footer .social a:link, a:visited, a:active
+{
+	text-decoration: none;
+	color: black;
+}
 
 textarea:hover, 
 input:hover, 
