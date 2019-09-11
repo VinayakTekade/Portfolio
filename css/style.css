@@ -214,90 +214,74 @@ html, body {
 	color: #888888;
 }
 
-
-
-/* .service */
-/* 
-#services {
-	background: #313131 url(../images/bg.jpg) no-repeat center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
+#services
+{
+	background: url("../img/carouselBg.jpg");
 	background-size: cover;
-	padding-top: 12rem;
-	padding-bottom: 12rem;
-	color: white;
-	position: relative;
+	color: #ebebeb;
+
 }
 
-
-#services .overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #151515;
-	opacity: .9;
-}
-
-#services .section-intro {
-	margin-bottom: 1.8rem;
-}
-
-#services .section-intro h1 {
-	color: white;
-}
-#services .section-intro h5 {
-	color: #FF0077;
-}
-#services .section-intro p {
-	color: rgba(255, 255, 255, 0.7);
-}
-.services-content {
-	max-width: 1200px;
-}
-.services-list {
-	margin-top: 1.2rem;
+.owl-carousel .item
+{
+	padding: 20px;
 	text-align: center;
 }
-.services-list .service {
-	margin-bottom: 1.2rem;
-	padding: 0 30px;
+
+.owl-carousel .item h3
+{
+	font-size: 2rem;
 }
-.services-list .icon {
-	display: inline-block;
-	margin-bottom: 2.1rem;
-}
-.services-list .icon i {
+
+.owl-carousel .item i
+{
 	font-size: 5.4rem;
-	color: #FF0077;
-}
-.services-list h3 {
-	color: #FFFFFF;
-}
-.services-list .desc {
-	color: rgba(255, 255, 255, 0.6);
+	color: rgb(255, 0, 119);
+	margin-bottom: 1rem;
 }
 
-/* pagination */
-/*
-.owl-pagination {
-	text-align: center;
-	width: 100%;
-	margin: .6rem 0 0;
+.form-control
+{
+	background-color: transparent;
+	border:0;
+	border-bottom: 2px solid;
 }
-.owl-theme .owl-controls .owl-page {
-	display: inline-block;
+
+.form-control:focus
+{
+	background-color: transparent;
+	border:0;
+	border-bottom: 2px solid rgb(255, 0, 119);
+
+
 }
-.owl-theme .owl-controls .owl-page span {
-	display: block;
-	width: 1.2rem;
-	height: 1.2rem;
-	margin: 1.2rem .8rem 0 .8rem;
-	border-radius: 50%;
-	display: inline-block;
-	background: #FFFFFF;
+
+form button[type=submit]
+{
+	background-color: rgb(255, 0, 119);
+	border: 0;
 }
-.owl-theme .owl-controls .owl-page.active span {
-	background: #FF0077;
-} */
+
+form button[type=submit]:hover
+{
+	background-color: rgb(218, 0, 102);
+	border: 0;
+}
+
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}

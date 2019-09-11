@@ -17,13 +17,20 @@ if($('.navbar').length > 0){
     });
 }
 
-$("#owl-slider").owlCarousel({
-    navigation: false,
-    pagination: true,
-    itemsCustom : [
-        [0, 1],
-        [700, 2],
-        [960, 3]
-     ],
-    navigationText: false
-});
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    autoplay: 1000,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:3
+        }
+    }
+})
