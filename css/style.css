@@ -369,6 +369,7 @@ html, body {
 .form-control:focus
 {
 	background-color: transparent;
+	color: #FFFFFF;
 	border:0;
 	border-bottom: 2px solid rgb(255, 0, 119);
 
