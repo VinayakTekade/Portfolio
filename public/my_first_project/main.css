@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /* Style the header */
+  header {
+    position: relative;
+    background-color: black;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+  }
+
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Style the content */
+  article {
+    background-color: #f1f1f1;
+    border: red;
+    /* padding: 10px; */
+  }
+  
+  /* Style the footer */
+  footer {
+    position: fixed;
+    left:0;
+    bottom:0;
+    width: 100%;
+    background-color:black;
+    text-align: center;
+    color: white;
+    clear:both;
+  }
+  
+  
+  /* Style the navbar items */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    transform: scale(1.1);
+    background-color: #111111;
+  }
+
+
+  /* Slideshow container */
+  .slideshow-container {  
+    height: 100%;
+    max-width: 70%;
+    position: relative;
+    margin: auto;
+ }
+
+ /* Hide the images by default */
+ .mySlides:not(:first-child) {
+  display:none;
+ }
+
+ /* Next & previous buttons */
+ .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+ } 
+
+ /* Position the "next button" to the right */
+ .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+ }
+
+ /* On hover, add a black background color with a little bit see-through */
+ .prev:hover, .next:hover {
+  transform: scale(1.1);
+  background-color: rgba(0,0,0,0.8);
+ }
+
+ /* Caption text */
+ .text {
+  font-family: 'Times New Roman', Times, serif;
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+ }
+
+ /* Number text (1/3 etc) */
+ .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+ }
+
+ /* The dots/bullets/indicators */
+ .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+ }
+
+ .active, .dot:hover {
+   background-color: #717171;
+ }
+
+ /* Style for Cards*/
+ .card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+  border-radius: 5px 5px 5px 5px ;
+ }
+
+ .card:hover {
+  box-shadow: 2px 8px 16px 2px rgba(0,0,0,0.2);
+ }
+
+ img {
+  border-radius: 5px 5px 5px 5px;
+ }
+
+
+ /* Create two columns(30-70) that floats next to each other */
+ .column1 {
+  float: left;
+  width: 30%;
+  height: 30%;
+  padding: 10px;
+ }
+
+ .column2 {
+  float: left;
+  width: 70%;
+  height: 30%;
+  padding: 10px;
+ }
+
+ /* Clear floats after the columns */
+
+ .row:after {
+  content: "";
+  display: table;
+  clear: both;
+ }
+
+ /* Styling for logo */
+ .logo
+ {
+   float: left;
+   overflow: hidden;
+   padding: 10px 10px;
+ }
+
+ /* Styling for Inputs */
+
+ .container {
+  padding: 2px 2px;
+  width: 500px;
+  margin-left:25%;
+  margin-right:25%;
+ }
+
+ input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+ }
+
+ label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+ }
+
+ input[type=checkbox]{
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+ }
+
+ input[type=submit] {
+  background-color: #4CAF50;
+  color:white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+ }
+
+ input[type=submit]:hover {
+  background-color: #45a049;
+ }
+
+ /* Fading animation */
+ .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+ }
+ @-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+ }
+
+ @keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+ }
+
+
+
+ /* Style For Profile*/
+ .profile {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
