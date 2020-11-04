@@ -19,12 +19,6 @@ html, body {
 	transition: 0.5s;
  }
 
-
-.navbar
-{
-    background-color: rgba(255, 255, 255, 0.4);
-}
-
 #landing
 {
     width: 100%;
@@ -68,6 +62,7 @@ html, body {
 
 /* Add the below transitions to allow a smooth color change similar to lyft */
 .navbar {
+	background-color: rgba(255, 255, 255, 0.4);
     -webkit-transition: all 0.6s ease-out;
     -moz-transition: all 0.6s ease-out;
     -o-transition: all 0.6s ease-out;
