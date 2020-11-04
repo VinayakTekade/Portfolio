@@ -79,7 +79,6 @@ html, body {
     background-color: rgb(255, 255, 255);
 }
 
-
 #resume .timeline-wrap {
 	position: relative;
 	margin-top: 1.5rem;
@@ -162,6 +161,12 @@ html, body {
 	font-family: "poppins-regular", sans-serif;
 	font-size: 1.6rem;
 	color: #888888;
+}
+
+.card {
+	border-radius: 0px;
+	background: #ffffff;
+	box-shadow:  20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
 }
 
 @media only screen and (max-width:1024px) {
