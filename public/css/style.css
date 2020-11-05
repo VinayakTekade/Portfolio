@@ -267,7 +267,10 @@ html, body {
 		font-weight: 300;
 		line-height: 1.2;
 	}
-	
+	.landing-text p
+{
+    font-size: 1.5rem;
+}
 	#about .container .btn 
 	{
 		font-size: 1rem;
@@ -296,12 +299,12 @@ html, body {
 		bottom:0;
 	}
 	.display-4 {
-		font-size: 2.5rem;
+		font-size: 2.0rem;
 		font-weight: 300;
 		line-height: 1.2;
 	}
 	.display-3 {
-		font-size: 3.5rem;
+		font-size: 3.0rem;
 		font-weight: 300;
 		line-height: 1.2;
 	}
