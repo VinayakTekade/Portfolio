@@ -6,5 +6,25 @@
       "**/.*",
       "**/node_modules/**"
     ]
-  }
+  },
+  "headers": [
+    {
+      "source": "**/*.@(eot|otf|ttf|ttc|woff|woff2|css)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    },
+    {
+      "source": "**/*.@(js|css|json|jpg|jpeg|gif|png|ico)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "max-age=3600"
+        }
+      ]
+    }
+  ]
 }
