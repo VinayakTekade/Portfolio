@@ -388,26 +388,31 @@ form button[type=submit]:hover
 	border: 0;
 }
 
-footer .social
+.social
 {
 	padding-top: 3rem;
 	margin-bottom: 0;
 }
 
-footer .social a:hover
+.social a:hover
 {
 	transition: all 0.5s;
 }
 
-footer .social a:hover
+.social a:hover
 {
 	transform: scale(1.1);
 }
 
 
-footer .social a:link, a:visited, a:active
+.social a:link, a:visited, a:active
 {
 	text-decoration: none;
+	color: black;
+}
+
+a:link, a:visited, a:active
+{
 	color: black;
 }
 
